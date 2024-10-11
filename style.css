@@ -3,13 +3,13 @@
 
 :root{
     --body-color: #FFF8E8;
-    --color-white: #fff ;
+    --color-white: #fff;
     --text-color-second: #AAB396;
     --text-color-third: #674636;
     --first-color: #F7EED3;
-    --first-color-hover: #674636;
-    --second-color: #AAB396;
-    --third-color:#674636 ;
+    --first-color-hover: #AAB396;
+    --second-color: #F7EED3;
+    --third-color:#AAB396;
     --first-shadow-color: #674636;
 }
 *{
@@ -41,7 +41,7 @@ html{
 .btn{
     font-weight: 500;
     padding: 12px 20px;
-    background: var(--first-color);
+    background: var(--third-color);
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -51,8 +51,8 @@ html{
     margin-left: 10px;
 }
 .btn:hover{
-    background: var(--text-color-third);
-    color: var(--text-color-third);
+    background: var(--first-shadow-color);
+    color: var(--body-color);
 }
 /* ----- GLOBAL ICONS DESIGN ----- */
 i{
@@ -87,13 +87,7 @@ nav{
     font-weight: 600;
     color: var(--text-color-third);
 }
-.nav-logo span{
-    position: absolute;
-    top: -15px;
-    right: -20px;
-    font-size: 5em;
-    color: var(--text-color-second);
-}
+
 .nav-menu, .nav_menu_list{
     display: flex;
 }
@@ -103,7 +97,7 @@ nav{
 }
 .nav-link{
     text-decoration: none;
-    color: var(--text-color-second);
+    color: var(--text-color-third);
     font-weight: 500;
     padding-inline: 15px;
     margin-inline: 20px;
@@ -117,7 +111,7 @@ nav{
 }
 .active-link{
     position: relative;
-    color: var(--first-color);
+    color: var(--third-color);
     transition: .3;
 }
 .active-link::after{
@@ -128,7 +122,7 @@ nav{
     transform: translate(-50%, -50%);
     width: 5px;
     height: 5px;
-    background: var(--first-color);
+    background: var(--th);
     border-radius: 50%;
 }
 /* ----- WRAPPER DESIGN ----- */
